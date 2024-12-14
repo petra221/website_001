@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <h4>My Movie database</h4>
+    <script src="script.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #270355;
+            color: white;
+            padding: 1rem 0;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+        }
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
+        footer {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            padding: 1rem 0;
+            text-align: center;
+        }
+    </style>
+    
+</head>
+
+<body>
+    
+    <header>
+        <div class="container">
+            <h1>My Favourite movies to watch</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                
+                <div class="column">
+                    <h3>Titles</h3>
+                    <ul id="movieList">
+                        <li><input type="checkbox">The Matrix, 1999, Keanu Reaves, Laurence Fishburne</li>
+                        <li><input type="checkbox">Indiana jones, 1989, Harrison ford, Sean Connery</li>
+                        <li><input type="checkbox">Casino Royal, 2006, Daniel Craig, Eva Green</li>
+                    </ul>
+                    <button onclick="delMovie()"><i class="fa-solid fa-user">  Delete selected</i></button>
+                </div>
+
+                <div class="column">
+                    <h3>Add movie</h3>
+                    Title:   <input class="" id="inputTitle" type="text"><br>
+                    Year:    <input class="" id="inputYear" type="text"><br>
+                    Actors:  <input class="" id="inputActors" type="text"><br>
+                    <button onclick="addMovie()"><i class="fa-solid fa-file-circle-plus">  Add</i></button>
+                </div>
+
+              </div>
+
+
+        
+
+      
+
+        <!-- <form>
+            <label></label><br>
+            <label></label><br>
+            <label></label><br>
+        </form> -->
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <hr>
+            <h3>&copy; My Movie Database. All rights reserved</h3>
+        </div>
+    </footer>
+
+</body>
+</html>
